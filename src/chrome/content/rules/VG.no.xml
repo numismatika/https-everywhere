@@ -7,11 +7,13 @@
 		- direkte.vg.no
 -->
 <ruleset name="VG.no">
+	<target host="api.vg.no" />
 	<target host="static.vg.no" />
 	<target host="static01.vg.no" />
 	<target host="static02.vg.no" />
 	<target host="static03.vg.no" />
 	<target host="static04.vg.no" />
+	<target host="svp.vg.no" />
 	<target host="touch.vg.no" />
 	<target host="vgc.no" />
 	<target host="0.vgc.no" />
@@ -29,7 +31,9 @@
 	<target host="cdn.vgc.no" />
 	<target host="imbo.vgc.no" />
 	<target host="svp.vgc.no" />
-	<target host="imbo.vgtv.no" />
+	<target host="imbo01.vgtv.no" />
+	<target host="imbo02.vgtv.no" />
+	<target host="imbo03.vgtv.no" />
 
 	<rule from="^http:"
 		to="https:"/>
