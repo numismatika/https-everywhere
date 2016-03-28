@@ -1,0 +1,10 @@
+<ruleset name="Overviewer.org">
+
+	<target host="overviewer.org"/>
+	<target host="www.overviewer.org"/>
+
+	<rule from="^http://www\.overviewer\.org/" to="https://overviewer.org/"/>
+
+	<rule from="^http:" to="https:"/>
+
+</ruleset>
