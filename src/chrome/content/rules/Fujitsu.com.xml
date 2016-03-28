@@ -1,0 +1,8 @@
+<ruleset name="Fujitsu">
+
+	<target host="support.ts.fujitsu.com"/>
+	<target host="www.fujitsu.com"/>
+
+	<rule from="^http:" to="https:"/>
+
+</ruleset>
