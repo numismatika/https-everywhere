@@ -1,0 +1,11 @@
+<ruleset name="Markt.de">
+
+	<target host="markt.de"/>
+	<target host="bilder.markt.de"/>
+	<target host="static.markt.de"/>
+	<target host="www.markt.de"/>
+
+	<rule from="^http:"
+		to="https:" />
+
+</ruleset>
