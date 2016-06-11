@@ -1,0 +1,99 @@
+<!--
+	Cert expired:
+		- glueckwuensche.nwzonline.de
+
+	Self-signed cert:
+		- azubis.nwzonline.de
+		- gustol.nwzonline.de
+		- immoanzeige.nwzonline.de
+		- lehrerblog.nwzonline.de
+		- oldennerd.nwzonline.de
+		- rundesache.nwzonline.de
+		- tussiblog.nwzonline.de
+
+	50x status code:
+		- immobilien.nwzonline.de
+		- www.immobilien.nwzonline.de
+
+	Cert mismatch:
+		- www.hochzeit.nwzonline.de
+		- www.jobs.nwzonline.de
+		- live.nwzonline.de
+		- newsletter.nwzonline.de
+		- srvnwzmptfe.nwzonline.de
+		- nwz-gutscheinauktion.de
+		- nwz-inside.de
+		- www.nwz-inside.de
+-->
+<ruleset name="Nordwest Zeitung">
+
+	<target host="nwzonline.de"/>
+	<target host="www.nwzonline.de"/>
+	<target host="abo.nwzonline.de" />
+	<target host="abocenter.nwzonline.de" />
+	<target host="adbag.nwzonline.de" />
+	<target host="addesk.nwzonline.de" />
+	<target host="adlink.nwzonline.de" />
+	<target host="aktion-vm.nwzonline.de" />
+	<target host="aktion.nwzonline.de" />
+	<target host="aktiontest.nwzonline.de" />
+	<target host="api.nwzonline.de" />
+	<target host="archiv.nwzonline.de" />
+	<target host="auto.nwzonline.de" />
+	<target host="autoanzeigen.nwzonline.de" />
+	<target host="baby.nwzonline.de" />
+	<target host="banner.nwzonline.de" />
+	<target host="belegexemplar.nwzonline.de" />
+	<target host="bestatter.nwzonline.de" />
+	<target host="branchenbuch.nwzonline.de" />
+	<target host="eidos7.nwzonline.de" />
+	<target host="epaper-vm.nwzonline.de" />
+	<target host="epaper.nwzonline.de" />
+	<target host="error.nwzonline.de" />
+	<target host="events.nwzonline.de" /> 
+	<target host="fbia.nwzonline.de" />
+	<target host="garten.nwzonline.de" />
+	<target host="guide.nwzonline.de" />
+	<target host="guidetest.nwzonline.de" />
+	<target host="hochzeit.nwzonline.de" />
+	<target host="img.nwzonline.de" />
+	<target host="m.immobilien.nwzonline.de" />
+	<target host="jobs.nwzonline.de" />
+	<target host="jobsanbieten.nwzonline.de" />
+	<target host="kino.nwzonline.de" />
+	<target host="kon.nwzonline.de" />
+	<target host="login.nwzonline.de" />
+	<target host="logintest.nwzonline.de" />
+	<target host="maintenance.nwzonline.de" />
+	<target host="marktplatz.nwzonline.de" />
+	<target host="mein.nwzonline.de" />
+	<target host="meinberater.nwzonline.de" />
+	<target host="mobil.nwzonline.de" />
+	<target host="msp.nwzonline.de" />
+	<target host="nwepbep.nwzonline.de" />
+	<target host="osc.nwzonline.de" />
+	<target host="osctest.nwzonline.de" />
+	<target host="ovs.nwzonline.de" />
+	<target host="ovsstagep.nwzonline.de" />
+	<target host="ovstest.nwzonline.de" />
+	<target host="radtouren.nwzonline.de" />
+	<target host="search.nwzonline.de" />
+	<target host="shop.nwzonline.de" />
+	<target host="simply-local.nwzonline.de" />
+	<target host="sso.nwzonline.de" />
+	<target host="ssotest.nwzonline.de" />
+	<target host="ticketshop.nwzonline.de" />
+	<target host="tiere.nwzonline.de" />
+	<target host="tippspiel.nwzonline.de" />
+	<target host="traueranzeigen.nwzonline.de" />
+	<target host="werben.nwzonline.de" />
+
+	<target host="ah.nordwest-marktplatz.de"/>
+	<target host="ok.nordwest-marktplatz.de"/>
+
+	<target host="ess.nwz-service.de"/>
+
+	<rule from="^http:"
+		to="https:" />
+
+</ruleset>
