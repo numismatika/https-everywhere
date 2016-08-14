@@ -31,6 +31,7 @@
 
 	<target host="thenextweb.com" />
 	<target host="*.thenextweb.com" />
+	<target host="*.tnwcdn.com" />
 
 
 	<!--	At least some pages redirect to http.
