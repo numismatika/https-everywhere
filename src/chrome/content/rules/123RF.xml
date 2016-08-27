@@ -7,12 +7,27 @@
 		- d3klshmqqidl5x.cloudfront.net
 			- static.123rf.com
 
+	Broken:
+		-blog , cert expired  
 -->
 <ruleset name="123RF.com">
 
 	<!--	Direct rewrites:
 				-->
 	<target host="123rf.com" />
+	<target host="de.123rf.com" />
+	<target host="es.123rf.com" />
+	<target host="fr.123rf.com" />
+	<target host="hu.123rf.com" />
+	<target host="it.123rf.com" />
+	<target host="jp.123rf.com" />
+	<target host="kr.123rf.com" />
+	<target host="m.123rf.com" />
+	<target host="nl.123rf.com" />
+	<target host="pl.123rf.com" />
+	<target host="pt.123rf.com" />
+	<target host="ru.123rf.com" />
+	<target host="tr.123rf.com" />
 	<target host="www.123rf.com" />
 
 	<!--	Complications:
