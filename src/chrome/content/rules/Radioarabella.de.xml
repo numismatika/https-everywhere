@@ -1,0 +1,9 @@
+<ruleset name="Radio Arabella">
+
+	<target host="radioarabella.de"/>
+	<target host="www.radioarabella.de"/>
+
+	<rule from="^http:"
+		to="https:" />
+
+</ruleset>
