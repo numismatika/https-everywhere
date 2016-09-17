@@ -10,19 +10,70 @@
 	Nonfunctional hosts in *amcnetworks.com:
 
 		- (www.)? ᵈ
+		- affiliate ᵈ
+		- email ᵈ
 		- investors ᵈ
 		- press ᵈ
+		- uk ᵈ 
 
 	ᵈ Dropped
 
 -->
 <ruleset name="AMC Networks.com (partial)">
 
-	<target host="images.amcnetworks.com" />
+	<target host="www.amcnetworks.com"/>
 
+	<target host="autodiscover.amcnetworks.com"/>
+	<target host="adfs.amcnetworks.com"/>
+	<target host="adfs-us.amcnetworks.com"/>
+	<target host="sales.affiliate.amcnetworks.com"/>
+	<target host="affiliate.amcnetworks.com"/>
+	<target host="affiliatelaunch.amcnetworks.com"/>
+	<target host="aspext01.amcnetworks.com"/>
+	<target host="aspext02.amcnetworks.com"/>
+	<target host="cdn.amcnetworks.com"/>
+	<target host="citrix.amcnetworks.com"/>
+	<target host="crowd.dmc.amcnetworks.com"/>
+	<target host="mft.dmc.amcnetworks.com"/>
+	<target host="remote.dmc.amcnetworks.com"/>
+	<target host="servicecenter.dmc.amcnetworks.com"/>
+	<target host="email.amcnetworks.com"/>
+	<target host="a.mx.email.amcnetworks.com"/>
+	<target host="ns-01.email.amcnetworks.com"/>
+	<target host="ns-02.email.amcnetworks.com"/>
+	<target host="t.email.amcnetworks.com"/>
+	<target host="dragnet.amcnetworks.com"/>
+	<target host="hybrid.amcnetworks.com"/>
+	<target host="share1.iberia.amcnetworks.com"/>
+	<target host="images.amcnetworks.com"/>
+	<target host="stage.images.amcnetworks.com"/>
+	<target host="investors.amcnetworks.com"/>
+	<target host="iprodebso.amcnetworks.com"/>
+	<target host="iprodsupportebso.amcnetworks.com"/>
+	<target host="international.amcnetworks.com"/>
+	<target host="admin.international.amcnetworks.com"/>
+	<target host="nonprodportal.amcnetworks.com"/>
+	<target host="passwordreset.amcnetworks.com"/>
+	<target host="portal.amcnetworks.com"/>
+	<target host="press.amcnetworks.com"/>
+	<target host="preview.amcnetworks.com"/>
+	<target host="rapid.amcnetworks.com"/>
+	<target host="secure.amcnetworks.com"/>
+	<target host="stage.amcnetworks.com"/>
+	<target host="svodupload.amcnetworks.com"/>
+	<target host="toc.amcnetworks.com"/>
+	<target host="tss.amcnetworks.com"/>
+	<target host="tuk.amcnetworks.com"/>
+	<target host="uk.amcnetworks.com"/>
+	<target host="www.uk.amcnetworks.com"/>
+	<target host="shares.uk.amcnetworks.com"/>
+	<target host="vpn.uk.amcnetworks.com"/>
+	<target host="vc.amcnetworks.com"/>
+	<target host="vcse1.vc.amcnetworks.com"/>
+	<target host="vpn.amcnetworks.com"/>
+	<target host="vtt.amcnetworks.com"/>
 
 	<securecookie host="^\w" name=".+" />
-
 
 	<rule from="^http:"
 		to="https:" />
