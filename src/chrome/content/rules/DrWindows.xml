@@ -1,0 +1,8 @@
+<ruleset name="Dr. Windows">
+
+	<target host="drwindows.de" />
+	<target host="www.drwindows.de" />
+
+	<rule from="^http:" to="https:"/>
+
+</ruleset>
