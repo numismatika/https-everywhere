@@ -1,0 +1,13 @@
+<!--
+	Self-signed cert:
+		- mail.coinspondent.de
+-->
+<ruleset name="Coinspondent.de">
+
+	<target host="coinspondent.de"/>
+	<target host="www.coinspondent.de"/>
+
+	<rule from="^http:"
+		to="https:" />
+
+</ruleset>
