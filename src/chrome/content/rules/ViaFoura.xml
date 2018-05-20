@@ -1,0 +1,26 @@
+<!--
+	Timeout:
+		- sub.viafoura.io
+		- viafoura.net
+		- www.viafoura.net
+-->
+<ruleset name="ViaFoura" >
+
+	<target host="admin.viafoura.co" />
+	<target host="api.viafoura.co" />
+	<target host="content.viafoura.co" />
+	<target host="i.viafoura.co" />
+	<target host="toplists.viafoura.co" />
+
+	<target host="auth.viafoura.io" />
+
+	<target host="cdn-staging.viafoura.net" />
+	<target host="cdn.viafoura.net" />
+	<target host="media.viafoura.net" />
+	
+	<securecookie host=".+" name=".+" />
+
+	<rule from="^http:"
+		to="https:" />
+
+</ruleset>
