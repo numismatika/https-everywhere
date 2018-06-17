@@ -54,7 +54,7 @@
 	<target host="*.atos.net" />
 
 
-	<securecookie host="^(?:\w+\.)?atos\.net$" name=".+" />
+	<securecookie host=".+" name=".+" />
 
 
 	<rule from="^http://((?:a[eprtu]|ascentlookout|b[egr]|c[hnz]|cms|de|dk|eg|es|fi|fr|hr|in|it|jp|mx|n[alz]|p[hlt]|prd|r[osu]|se|sk|t[hrw]|uk|www|za)\.)?atos\.net/"
