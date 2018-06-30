@@ -1,34 +1,21 @@
-
 <!--
-Disabled by https-everywhere-checker because:
-Fetch error: http://global.ib-ibi.com/ => https://global.ib-ibi.com/: (56, 'SSL read: error:00000000:lib(0):func(0):reason(0), errno 104')
-
-	www.ib-ibi.com: Refused
-
-
-	^ib-ibi.com doesn't exist.
-
-
-	Insecure cookies are set for these hosts: ᶜ
-
+	TLS error:
+		- ev.ib-ibi.com
+		- ib.la.ib-ibi.com
 		- global.ib-ibi.com
 
-	ᶜ See https://owasp.org/index.php/SecureFlag
-
+	Cert mismatch
+		- m.ib-ibi.com
 -->
-<ruleset name="IB-IBI.com (partial)" default_off='failed ruleset test'>
+<ruleset name="IB-IBI.com (partial)" >
 
-	<target host="global.ib-ibi.com" />
+	<target host="www.ib-ibi.com" />
 
-		<test url="http://global.ib-ibi.com/image.sbxx?go=" />
-
-
-	<!--	Not secured by server:
-					-->
-	<!--securecookie host="^global\.ib-ibi\.com$" name="^ASP\.NET_SessionId$" /-->
+	<target host="ib.ap.ib-ibi.com" />
+	<target host="dos.ib-ibi.com" />
+	<target host="optout.ib-ibi.com" />
 
 	<securecookie host=".+" name=".+" />
-
 
 	<rule from="^http:"
 		to="https:" />
