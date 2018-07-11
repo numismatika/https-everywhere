@@ -1,6 +1,13 @@
 <ruleset name="IQ Digital Media Marketing">
 
+	<target host="iqcontentplatform.de" />
+	<target host="www.iqcontentplatform.de" />
+
+	<target host="c.iqcontentplatform.de" />
 	<target host="cdn.iqcontentplatform.de" />
+	<target host="d.iqcontentplatform.de" />
+	<target host="img.iqcontentplatform.de" />
+	<target host="t.iqcontentplatform.de" />
 
 	<rule from="^http:"
 		to="https:" />
