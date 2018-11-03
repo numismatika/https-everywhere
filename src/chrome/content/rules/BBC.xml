@@ -1,10 +1,4 @@
 <!--
-	For rules covering resources which do not secure
-	mixed content, see bbc.co.uk-resources.xml.
-
-	For problematic rules, see BBC-mismatches.xml.
-
-
 	Other BBC rulesets:
 
 		- BBC.com.xml
@@ -12,109 +6,541 @@
 		- bbci.co.uk.xml
 		- bbcimg.co.uk.xml
 
-
-	CDN buckets:
-
-		- cdnedge.bbc.co.uk.edgesuite.net
-		- electradl.iplayer.bbc.co.uk.edgesuite.net
-		- news.bbc.co.uk.edgesuite.net
-			- newsimg.bbc.co.uk
-			- feeds.bbci.co.uk
-			- news.bbcimg.co.uk
-			- tile[1-4].bbcimg.co.uk
-		- emp.bbci.co.uk.edgesuite.net
-		- ichef.bbci.co.uk.edgesuite.net
-		- node1.bbcimg.co.uk.edgesuite.net
-		- bbcmedia.fcod.llnwd.net
-
-
-
-	Nonfunctional domains:
-
-		- bbc.co.uk subdomains:
-
-			- cdnedge *
-			- confluence.dev	(handshake error)
-			- ftp.kw	(401, self-signed)
-			- m ʰ
-			- news ʳ
-			- newsbeta	(no https)
-			- newsforums
-			- newsvote
-			- playlists **
-			- r **
-			- careers (certificate has expired)
-
-		- (www.)bbcamerica.com	(reset)
-
-	* 503, akamai
-	ʰ Redirects to http
-	** Refused
-	ʳ Refused
-
-
-	Problematic hosts in *bbc.co.uk:
-
-		- careerssearch ᵐ
-
-	ᵐ Mismatched
-
-
-	Insecure cookies are set for these domains and hosts: ᶜ
-
-		- .bbc.co.uk
-		- careershub.bbc.co.uk
-		- iplayerhelp.external.bbc.co.uk
-
-	ᶜ See https://owasp.org/index.php/SecureFlag
-
-
-	Mixed content:
-
-		- css on careerssearch from $self
-		- Images on careerssearch from $self
-		- favicon on careerssearch from $self
-
 -->
 <ruleset name="BBC.co.uk (partial)">
 
-	<target host="bbc.co.uk" />
-	<target host="ssc.api.bbc.co.uk" />
-	<target host="careershub.bbc.co.uk" />
-	<!--target host="downloads.bbc.co.uk" /-->
-	<target host="iplayerhelp.external.bbc.co.uk" />
-	<!--target host="open.live.bbc.co.uk" /-->
-	<!--target host="www.live.bbc.co.uk" /-->
-	<!--target host="newsimg.bbc.co.uk" /-->
-	<!--target host="polling.bbc.co.uk" /-->
-	<target host="sa.bbc.co.uk" />
-	<target host="ssl.bbc.co.uk" />
-	<!--target host="static.bbc.co.uk" /-->
-	<target host="stats.bbc.co.uk" />
-	<target host="www.bbc.co.uk" />
+	<target host="bbc.co.uk"/>
+	<target host="www.bbc.co.uk"/>
 
-		<!--
-		<test url="http://downloads.bbc.co.uk/errors/btm.gif" />
-		<test url="http://newsimg.bbc.co.uk/shared/img/v4/skip_to_top_arrow.gif" />
-		<test url="http://sa.bbc.co.uk/bbc/bbc/s?name=&amp;ns_m2=&amp;ns_setsiteck=&amp;ml_name=&amp;ml_version=&amp;blq_js_enabled=&amp;blq_s=&amp;blq_r=&amp;blq_v=&amp;blq_e=&amp;app_name=&amp;app_version=&amp;app_edition=&amp;is_app=&amp;page_type=&amp;pal_route=&amp;app_type=&amp;language=&amp;pal_webapp=&amp;prod_name=" />
-		-->
-		<test url="http://ssl.bbc.co.uk/musicautoclearindies" />
-		<!--
-		<test url="http://static.bbc.co.uk/id/0.34.96/img/bbcid_orb_signin_light.png" />
-		-->
-		<test url="http://stats.bbc.co.uk/o.gif" />
+	<target host="borodin.api.bbc.co.uk"/>
+	<target host="bbcthree-web-server.api.bbc.co.uk"/>
+	<target host="api.bbc.co.uk"/>
+	<target host="cookie-oven.api.bbc.co.uk"/>
+	<target host="Focalpoint.bbc.co.uk"/>
+	<target host="Suppliers.bbc.co.uk"/>
+	<target host="discussions.api.bbc.co.uk"/>
+	<target host="SSO0001Ext.bbc.co.uk"/>
+	<target host="homepage.api.bbc.co.uk"/>
+	<target host="ibl.api.bbc.co.uk"/>
+	<target host="activity.api.bbc.co.uk"/>
+	<target host="heartbeat.activity.api.bbc.co.uk"/>
+	<target host="nsi.activity.api.bbc.co.uk"/>
+	<target host="comments.api.bbc.co.uk"/>
+	<target host="director.api.bbc.co.uk"/>
+	<target host="dmkarcade.api.bbc.co.uk"/>
+	<target host="homepage-mobile-app.api.bbc.co.uk"/>
+	<target host="homepage-recs-service.api.bbc.co.uk"/>
+	<target host="graph.ibl.api.bbc.co.uk"/>
+	<target host="idcta.api.bbc.co.uk"/>
+	<target host="nsi.activity.int.api.bbc.co.uk"/>
+	<target host="comments.int.api.bbc.co.uk"/>
+	<target host="session.id.api.bbc.co.uk"/>
+	<target host="activity.int.api.bbc.co.uk"/>
+	<target host="heartbeat.activity.int.api.bbc.co.uk"/>
+	<target host="session.id.int.api.bbc.co.uk"/>
+	<target host="introducing-service.int.api.bbc.co.uk"/>
+	<target host="moderateduser.int.api.bbc.co.uk"/>
+	<target host="ivote.int.api.bbc.co.uk"/>
+	<target host="moderation.int.api.bbc.co.uk"/>
+	<target host="ssc.int.api.bbc.co.uk"/>
+	<target host="preferences.notifications.int.api.bbc.co.uk"/>
+	<target host="ipd-hq.api.bbc.co.uk"/>
+	<target host="registrar.notifications.int.api.bbc.co.uk"/>
+	<target host="boomr.iplayer.api.bbc.co.uk"/>
+	<target host="segmentation.int.api.bbc.co.uk"/>
+	<target host="ratings.int.api.bbc.co.uk"/>
+	<target host="introducing-service-ad.api.bbc.co.uk"/>
+	<target host="introducing-service.api.bbc.co.uk"/>
+	<target host="downloads-app.iplayer.api.bbc.co.uk"/>
+	<target host="ivote.api.bbc.co.uk"/>
+	<target host="moderateduser.api.bbc.co.uk"/>
+	<target host="moderation.api.bbc.co.uk"/>
+	<target host="newton.api.bbc.co.uk"/>
+	<target host="preferences.notifications.api.bbc.co.uk"/>
+	<target host="ssc.api.bbc.co.uk"/>
+	<target host="preview.api.bbc.co.uk"/>
+	<target host="ratings.api.bbc.co.uk"/>
+	<target host="rms.api.bbc.co.uk"/>
+	<target host="segmentation.api.bbc.co.uk"/>
+	<target host="heartbeat.activity.stage.api.bbc.co.uk"/>
+	<target host="activity.stage.api.bbc.co.uk"/>
+	<target host="nsi.activity.stage.api.bbc.co.uk"/>
+	<target host="dmkarcade.stage.api.bbc.co.uk"/>
+	<target host="session.id.stage.api.bbc.co.uk"/>
+	<target host="taster-rate.api.bbc.co.uk"/>
+	<target host="idcta-origin.stage.api.bbc.co.uk"/>
+	<target host="ivote.stage.api.bbc.co.uk"/>
+	<target host="segmentation.stage.api.bbc.co.uk"/>
+	<target host="activity.test.api.bbc.co.uk"/>
+	<target host="borodin.test.api.bbc.co.uk"/>
+	<target host="cookie-oven.test.api.bbc.co.uk"/>
+	<target host="heartbeat.activity.test.api.bbc.co.uk"/>
+	<target host="nsi.activity.test.api.bbc.co.uk"/>
+	<target host="homepage.test.api.bbc.co.uk"/>
+	<target host="discussions.test.api.bbc.co.uk"/>
+	<target host="comments.test.api.bbc.co.uk"/>
+	<target host="homepage-recs-service.test.api.bbc.co.uk"/>
+	<target host="homepage-mobile-app.test.api.bbc.co.uk"/>
+	<target host="ibl.test.api.bbc.co.uk"/>
+	<target host="graph.ibl.test.api.bbc.co.uk"/>
+	<target host="introducing-service.test.api.bbc.co.uk"/>
+	<target host="session.id.test.api.bbc.co.uk"/>
+	<target host="ivote.test.api.bbc.co.uk"/>
+	<target host="moderateduser.test.api.bbc.co.uk"/>
+	<target host="moderation.test.api.bbc.co.uk"/>
+	<target host="newton.test.api.bbc.co.uk"/>
+	<target host="preferences.notifications.test.api.bbc.co.uk"/>
+	<target host="registrar.notifications.test.api.bbc.co.uk"/>
+	<target host="ratings.test.api.bbc.co.uk"/>
+	<target host="rms.test.api.bbc.co.uk"/>
+	<target host="ssc.test.api.bbc.co.uk"/>
+	<target host="segmentation.test.api.bbc.co.uk"/>
+	<target host="image-generator.vj.api.bbc.co.uk"/>
+	<target host="backstage.bbc.co.uk"/>
+	<target host="uploadz.vj.api.bbc.co.uk"/>
+	<target host="autodiscover.bbc.co.uk"/>
+	<target host="av.bbc.co.uk"/>
+	<target host="ftping501.bc.bbc.co.uk"/>
+	<target host="gtm504.bc.bbc.co.uk"/>
+	<target host="ing502.bc.bbc.co.uk"/>
+	<target host="vpn501.bc.bbc.co.uk"/>
+	<target host="vpn502.bc.bbc.co.uk"/>
+	<target host="beta.bbc.co.uk"/>
+	<target host="bfgsman02.bbc.co.uk"/>
+	<target host="bfgsra01.bbc.co.uk"/>
+	<target host="mm.bidi.bbc.co.uk"/>
+	<target host="careershub.bbc.co.uk"/>
+	<target host="careerssearch.bbc.co.uk"/>
+	<target host="bfgsra03.bbc.co.uk"/>
+	<target host="bfgsra05.bbc.co.uk"/>
+	<target host="bogons.bbc.co.uk"/>
+	<target host="blogs.bbc.co.uk"/>
+	<target host="cdfsip01.bbc.co.uk"/>
+	<target host="cdn-www.bbc.co.uk"/>
+	<target host="cdfwacext01.bbc.co.uk"/>
+	<target host="cdfwebconf01.bbc.co.uk"/>
+	<target host="cdn-www-staging.bbc.co.uk"/>
+	<target host="cdfwebext01.bbc.co.uk"/>
+	<target host="cdnedge.bbc.co.uk"/>
+	<target host="magpie.int.cfp.ch.bbc.co.uk"/>
+	<target host="squirrel.int.cfp.ch.bbc.co.uk"/>
+	<target host="moods.ch.bbc.co.uk"/>
+	<target host="online20.ch.bbc.co.uk"/>
+	<target host="shakespeare.ch.bbc.co.uk"/>
+	<target host="thira.ch.bbc.co.uk"/>
+	<target host="genome.ch.bbc.co.uk"/>
+	<target host="homefront.ch.bbc.co.uk"/>
+	<target host="cloud.virt.ch.bbc.co.uk"/>
+	<target host="ethics.virt.ch.bbc.co.uk"/>
+	<target host="composition.newsbeat.news.cloud.bbc.co.uk"/>
+	<target host="idex-ml.cloud.bbc.co.uk"/>
+	<target host="idex-ml.test.cloud.bbc.co.uk"/>
+	<target host="mailout0.cwwtf.bbc.co.uk"/>
+	<target host="mailout1.cwwtf.bbc.co.uk"/>
+	<target host="mailout2.cwwtf.bbc.co.uk"/>
+	<target host="d.bbc.co.uk"/>
+	<target host="data.bbc.co.uk"/>
+	<target host="fgbw1apviz4301.da-local.bbc.co.uk"/>
+	<target host="fgbw1apviz4302.da-local.bbc.co.uk"/>
+	<target host="fgbw1apviz4303.da-local.bbc.co.uk"/>
+	<target host="dev.bbc.co.uk"/>
+	<target host="ca.dev.bbc.co.uk"/>
+	<target host="confluence-stage.dev.bbc.co.uk"/>
+	<target host="confluence.dev.bbc.co.uk"/>
+	<target host="confluence-test.dev.bbc.co.uk"/>
+	<target host="dba-oem.dev.bbc.co.uk"/>
+	<target host="internal.dev.bbc.co.uk"/>
+	<target host="jira.dev.bbc.co.uk"/>
+	<target host="jira-stage.dev.bbc.co.uk"/>
+	<target host="jira-int.dev.bbc.co.uk"/>
+	<target host="jira-test.dev.bbc.co.uk"/>
+	<target host="repo.dev.bbc.co.uk"/>
+	<target host="developer.bbc.co.uk"/>
+	<target host="dropzone.bbc.co.uk"/>
+	<target host="dirweb001.bbc.co.uk"/>
+	<target host="downloads.bbc.co.uk"/>
+	<target host="dialin.bbc.co.uk"/>
+	<target host="emp.bbc.co.uk"/>
+	<target host="audiences.external.bbc.co.uk"/>
+	<target host="bbcid-contact.external.bbc.co.uk"/>
+	<target host="audiences-stg.external.bbc.co.uk"/>
+	<target host="bbcid-contact-stg.external.bbc.co.uk"/>
+	<target host="audiences-portal-picker.external.bbc.co.uk"/>
+	<target host="bbcsignups.external.bbc.co.uk"/>
+	<target host="ext-proteus.external.bbc.co.uk"/>
+	<target host="extra-proteus.external.bbc.co.uk"/>
+	<target host="faq.external.bbc.co.uk"/>
+	<target host="iplayerhelp.external.bbc.co.uk"/>
+	<target host="iplayerhelp-stg.external.bbc.co.uk"/>
+	<target host="tickets.external.bbc.co.uk"/>
+	<target host="writersroom.external.bbc.co.uk"/>
+	<target host="feweb001.bbc.co.uk"/>
+	<target host="feeds.bbc.co.uk"/>
+	<target host="fig.bbc.co.uk"/>
+	<target host="lists.forge.bbc.co.uk"/>
+	<target host="logs.forge.bbc.co.uk"/>
+	<target host="monitor-int.forge.bbc.co.uk"/>
+	<target host="ichef.bbc.co.uk"/>
+	<target host="www.int.bbc.co.uk"/>
+	<target host="int.bbc.co.uk"/>
+	<target host="crl-ejbca.int.bbc.co.uk"/>
+	<target host="fig.int.bbc.co.uk"/>
+	<target host="ichef.int.bbc.co.uk"/>
+	<target host="data.int.bbc.co.uk"/>
+	<target host="internal.int.bbc.co.uk"/>
+	<target host="m.int.bbc.co.uk"/>
+	<target host="mmc-backend.int.bbc.co.uk"/>
+	<target host="open.int.bbc.co.uk"/>
+	<target host="polling.int.bbc.co.uk"/>
+	<target host="production.int.bbc.co.uk"/>
+	<target host="static.int.bbc.co.uk"/>
+	<target host="tools-origin.int.bbc.co.uk"/>
+	<target host="pop3.kw.bbc.co.uk"/>
+	<target host="lists.bbc.co.uk"/>
+	<target host="secure.iplayer.bbc.co.uk"/>
+	<target host="securegate.iplayer.bbc.co.uk"/>
+	<target host="hevc.kw.bbc.co.uk"/>
+	<target host="bbc-vip133.lbh.bbc.co.uk"/>
+	<target host="bbc-vip134.lbh.bbc.co.uk"/>
+	<target host="bbc-vip148.lbh.bbc.co.uk"/>
+	<target host="bbc-vip151.lbh.bbc.co.uk"/>
+	<target host="live.bbc.co.uk"/>
+	<target host="bbc-vip152.lbh.bbc.co.uk"/>
+	<target host="bbc-vip153.lbh.bbc.co.uk"/>
+	<target host="b5rbsov.bidi.live.bbc.co.uk"/>
+	<target host="www.live.bbc.co.uk"/>
+	<target host="admin.live.bbc.co.uk"/>
+	<target host="b1thdo.bidi.live.bbc.co.uk"/>
+	<target host="api.live.bbc.co.uk"/>
+	<target host="b3thdo.bidi.live.bbc.co.uk"/>
+	<target host="b1rbsov.bidi.live.bbc.co.uk"/>
+	<target host="emp.live.bbc.co.uk"/>
+	<target host="internal.live.bbc.co.uk"/>
+	<target host="open.live.bbc.co.uk"/>
+	<target host="smp.live.bbc.co.uk"/>
+	<target host="ssl.live.bbc.co.uk"/>
+	<target host="talkback.live.bbc.co.uk"/>
+	<target host="wwwnews.live.bbc.co.uk"/>
+	<target host="lonsip01.bbc.co.uk"/>
+	<target host="tools-origin.live.bbc.co.uk"/>
+	<target host="lonwebext01.bbc.co.uk"/>
+	<target host="lonwacext01.bbc.co.uk"/>
+	<target host="lyncdiscover.bbc.co.uk"/>
+	<target host="m.bbc.co.uk"/>
+	<target host="lonwebconf01.bbc.co.uk"/>
+	<target host="click.ma.mailenvelope.bbc.co.uk"/>
+	<target host="view.ma.mailenvelope.bbc.co.uk"/>
+	<target host="radix.stage.md.bbc.co.uk"/>
+	<target host="matchmaker.int.md.bbc.co.uk"/>
+	<target host="matchmaker.live.md.bbc.co.uk"/>
+	<target host="matchmaker.test.md.bbc.co.uk"/>
+	<target host="mmc-backend-dual.bbc.co.uk"/>
+	<target host="mobile.bbc.co.uk"/>
+	<target host="external.mobileapps.bbc.co.uk"/>
+	<target host="meet.bbc.co.uk"/>
+	<target host="test1-ds.mobileapps.bbc.co.uk"/>
+	<target host="test2-ds.mobileapps.bbc.co.uk"/>
+	<target host="www.monitor.bbc.co.uk"/>
+	<target host="vics.monitor.bbc.co.uk"/>
+	<target host="monitoring.bbc.co.uk"/>
+	<target host="email.myconnect.bbc.co.uk"/>
+	<target host="email-b.myconnect.bbc.co.uk"/>
+	<target host="Sync2010.myconnect.bbc.co.uk"/>
+	<target host="external-their.myconnect.bbc.co.uk"/>
+	<target host="oa.myconnect.bbc.co.uk"/>
+	<target host="sync2010.myconnect.bbc.co.uk"/>
+	<target host="news.bbc.co.uk"/>
+	<target host="sync2010test.myconnect.bbc.co.uk"/>
+	<target host="newshub.bbc.co.uk"/>
+	<target host="newsforums.bbc.co.uk"/>
+	<target host="api.newshub.bbc.co.uk"/>
+	<target host="newsconnect.bbc.co.uk"/>
+	<target host="docs.newshub.bbc.co.uk"/>
+	<target host="newsrss.bbc.co.uk"/>
+	<target host="newsimg.bbc.co.uk"/>
+	<target host="ngmdm.bbc.co.uk"/>
+	<target host="newsvote.bbc.co.uk"/>
+	<target host="ns.bbc.co.uk"/>
+	<target host="pitch.bbc.co.uk"/>
+	<target host="enterpriseregistration.pitch.bbc.co.uk"/>
+	<target host="secure.pitch.bbc.co.uk"/>
+	<target host="ns3.bbc.co.uk"/>
+	<target host="my.pitch.bbc.co.uk"/>
+	<target host="sts.pitch.bbc.co.uk"/>
+	<target host="ns4.bbc.co.uk"/>
+	<target host="pagemon.bbc.co.uk"/>
+	<target host="pagemon-r.bbc.co.uk"/>
+	<target host="pagemon1.bbc.co.uk"/>
+	<target host="pagemon2.bbc.co.uk"/>
+	<target host="pagemon3.bbc.co.uk"/>
+	<target host="pagemon4.bbc.co.uk"/>
+	<target host="promslive.bbc.co.uk"/>
+	<target host="play.bbc.co.uk"/>
+	<target host="playlists.bbc.co.uk"/>
+	<target host="polling.bbc.co.uk"/>
+	<target host="freebird.prototyping.bbc.co.uk"/>
+	<target host="portalconnect.bbc.co.uk"/>
+	<target host="production.bbc.co.uk"/>
+	<target host="sibyl.prototyping.bbc.co.uk"/>
+	<target host="trailers.prototyping.bbc.co.uk"/>
+	<target host="api.freebird.prototyping.bbc.co.uk"/>
+	<target host="mango-res.freebird.prototyping.bbc.co.uk"/>
+	<target host="radio2.prototyping.bbc.co.uk"/>
+	<target host="waveform.prototyping.bbc.co.uk"/>
+	<target host="venueexplorer.prototyping.bbc.co.uk"/>
+	<target host="webaudio.prototyping.bbc.co.uk"/>
+	<target host="rdmedia.bbc.co.uk"/>
+	<target host="sa.bbc.co.uk"/>
+	<target host="sara.bbc.co.uk"/>
+	<target host="search.bbc.co.uk"/>
+	<target host="session.bbc.co.uk"/>
+	<target host="smtp-out.bbc.co.uk"/>
+	<target host="sip.bbc.co.uk"/>
+	<target host="smp.bbc.co.uk"/>
+	<target host="ssl.bbc.co.uk"/>
+	<target host="stage.bbc.co.uk"/>
+	<target host="www.stage.bbc.co.uk"/>
+	<target host="admin.stage.bbc.co.uk"/>
+	<target host="api.stage.bbc.co.uk"/>
+	<target host="cdn-www-staging.stage.bbc.co.uk"/>
+	<target host="cdn-www.stage.bbc.co.uk"/>
+	<target host="downloads.stage.bbc.co.uk"/>
+	<target host="emp.stage.bbc.co.uk"/>
+	<target host="audiences-portal-picker.external.stage.bbc.co.uk"/>
+	<target host="fig.stage.bbc.co.uk"/>
+	<target host="ichef.stage.bbc.co.uk"/>
+	<target host="internal.stage.bbc.co.uk"/>
+	<target host="m.stage.bbc.co.uk"/>
+	<target host="news.stage.bbc.co.uk"/>
+	<target host="open.stage.bbc.co.uk"/>
+	<target host="polling.stage.bbc.co.uk"/>
+	<target host="production.stage.bbc.co.uk"/>
+	<target host="smp.stage.bbc.co.uk"/>
+	<target host="ssl.stage.bbc.co.uk"/>
+	<target host="support.bbc.co.uk"/>
+	<target host="static.stage.bbc.co.uk"/>
+	<target host="talkback.stage.bbc.co.uk"/>
+	<target host="tools-origin.stage.bbc.co.uk"/>
+	<target host="static.bbc.co.uk"/>
+	<target host="stats.bbc.co.uk"/>
+	<target host="mailout0.telhc.bbc.co.uk"/>
+	<target host="mailout2.telhc.bbc.co.uk"/>
+	<target host="mailout1.telhc.bbc.co.uk"/>
+	<target host="suppliers.bbc.co.uk"/>
+	<target host="bbc-vip122.telhc.bbc.co.uk"/>
+	<target host="bbc-vip121.telhc.bbc.co.uk"/>
+	<target host="fmt-vip57.telhc.bbc.co.uk"/>
+	<target host="svn.bbc.co.uk"/>
+	<target host="test.bbc.co.uk"/>
+	<target host="www.test.bbc.co.uk"/>
+	<target host="admin.test.bbc.co.uk"/>
+	<target host="api.test.bbc.co.uk"/>
+	<target host="cdn-www.test.bbc.co.uk"/>
+	<target host="cdn-www-staging.test.bbc.co.uk"/>
+	<target host="crl-ejbca.test.bbc.co.uk"/>
+	<target host="emp.test.bbc.co.uk"/>
+	<target host="fig.test.bbc.co.uk"/>
+	<target host="ichef.test.bbc.co.uk"/>
+	<target host="id.test.bbc.co.uk"/>
+	<target host="internal.test.bbc.co.uk"/>
+	<target host="m.test.bbc.co.uk"/>
+	<target host="audiences-portal-picker.external.test.bbc.co.uk"/>
+	<target host="mmc-backend.test.bbc.co.uk"/>
+	<target host="open.test.bbc.co.uk"/>
+	<target host="tlsmtp-out.bbc.co.uk"/>
+	<target host="tlsmtp.bbc.co.uk"/>
+	<target host="polling.test.bbc.co.uk"/>
+	<target host="production.test.bbc.co.uk"/>
+	<target host="smp.test.bbc.co.uk"/>
+	<target host="static.test.bbc.co.uk"/>
+	<target host="tools-origin.test.bbc.co.uk"/>
+	<target host="upsource.connected-data.tools.bbc.co.uk"/>
 
-		<!--	Redirect to http:
-						-->
-		<!--exclusion pattern="^http://www\.bbc\.co\.uk/(?:arts$|blogs/tv/$|contact$|faqs$|faqs/assets/|id/status\?|iplayer$|news/(?:\d+$|contact-us/editorial$|privacy/$|science_and_environment$|uk-\d+$|weather$))" /-->
-		<!--
-			Exceptions:
-					-->
-		<!--exclusion pattern="^http://(?:www\.)?bbc\.co\.uk/(?!/*(?:$|\?|favicon\.ico|travel(?:$|[?/])))" /-->
-		<!--
-			Reduce non-Tor distinguishability:
-							-->
-		<exclusion pattern="^http://(?:www\.)?bbc\.co\.uk/(?!/*(?:$|\?|travel(?:$|[?/])))" />
+	<target host="a11yadmin.tools.bbc.co.uk"/>
+	<target host="amigo.tools.bbc.co.uk"/>
+	<target host="archiveservices.tools.bbc.co.uk"/>
+	<target host="archivesearch.tools.bbc.co.uk"/>
+	<target host="av-activity.tools.bbc.co.uk"/>
+	<target host="bbcm-user-portal-admin.tools.bbc.co.uk"/>
+	<target host="archivesearch.beta.tools.bbc.co.uk"/>
+	<target host="branding.tools.bbc.co.uk"/>
+	<target host="buzz-cms.tools.bbc.co.uk"/>
+	<target host="buzz-moderation.tools.bbc.co.uk"/>
+	<target host="castaway.tools.bbc.co.uk"/>
+	<target host="connectedstudio.tools.bbc.co.uk"/>
+	<target host="cosmos.tools.bbc.co.uk"/>
+	<target host="dashboards.tools.bbc.co.uk"/>
+	<target host="zenoss.dev.tools.bbc.co.uk"/>
+	<target host="digitalarchive.tools.bbc.co.uk"/>
+	<target host="dmkarcade.tools.bbc.co.uk"/>
+	<target host="eavis-admin.tools.bbc.co.uk"/>
+	<target host="fbd-playout-view.tools.bbc.co.uk"/>
+	<target host="fbd-playout-view-gnl.tools.bbc.co.uk"/>
+	<target host="fbd-status.tools.bbc.co.uk"/>
+	<target host="bbclogin.id.tools.bbc.co.uk"/>
+	<target host="help.bbclogin.id.tools.bbc.co.uk"/>
+	<target host="ibroadcast3.tools.bbc.co.uk"/>
+	<target host="gateway.id.tools.bbc.co.uk"/>
+	<target host="buzz-cms.int.tools.bbc.co.uk"/>
+	<target host="e.gateway.id.tools.bbc.co.uk"/>
+	<target host="image-upload-activity.tools.bbc.co.uk"/>
+	<target host="av-activity.int.tools.bbc.co.uk"/>
+	<target host="bbcm-user-portal-admin.int.tools.bbc.co.uk"/>
+	<target host="buzz-moderation.int.tools.bbc.co.uk"/>
+	<target host="castaway.int.tools.bbc.co.uk"/>
+	<target host="bbclogin.id.int.tools.bbc.co.uk"/>
+	<target host="eavis-admin.int.tools.bbc.co.uk"/>
+	<target host="gateway.id.int.tools.bbc.co.uk"/>
+	<target host="image-upload-activity.int.tools.bbc.co.uk"/>
+	<target host="introducing.int.tools.bbc.co.uk"/>
+	<target host="login.int.tools.bbc.co.uk"/>
+	<target host="marvin2-console.int.tools.bbc.co.uk"/>
+	<target host="ownit-smp.int.tools.bbc.co.uk"/>
+	<target host="music-tupac-production.int.tools.bbc.co.uk"/>
+	<target host="optimo.int.tools.bbc.co.uk"/>
+	<target host="pcs-fbd-jenkins-master.int.tools.bbc.co.uk"/>
+	<target host="admin.partner.platform.int.tools.bbc.co.uk"/>
+	<target host="ptk-continuity.int.tools.bbc.co.uk"/>
+	<target host="ptk-ideas.int.tools.bbc.co.uk"/>
+	<target host="ptk-planning.int.tools.bbc.co.uk"/>
+	<target host="ptk-talent.int.tools.bbc.co.uk"/>
+	<target host="redbutton.int.tools.bbc.co.uk"/>
+	<target host="scheduler.int.tools.bbc.co.uk"/>
+	<target host="scv-tableau.int.tools.bbc.co.uk"/>
+	<target host="silver.int.tools.bbc.co.uk"/>
+	<target host="tipo.int.tools.bbc.co.uk"/>
+	<target host="introducing.tools.bbc.co.uk"/>
+	<target host="iplayer.tools.bbc.co.uk"/>
+	<target host="sandbox.iplayer.tools.bbc.co.uk"/>
+	<target host="login.live.tools.bbc.co.uk"/>
+	<target host="storygraph.rd.live.tools.bbc.co.uk"/>
+	<target host="storyshooter.rd.live.tools.bbc.co.uk"/>
+	<target host="upload.rd.live.tools.bbc.co.uk"/>
+	<target host="users.rd.live.tools.bbc.co.uk"/>
+	<target host="scv-tableau.live.tools.bbc.co.uk"/>
+	<target host="marooned.tools.bbc.co.uk"/>
+	<target host="marvin2-console.tools.bbc.co.uk"/>
+	<target host="mira.tools.bbc.co.uk"/>
+	<target host="miraftp.tools.bbc.co.uk"/>
+	<target host="mobileci.tools.bbc.co.uk"/>
+	<target host="zenoss.monitoring.tools.bbc.co.uk"/>
+	<target host="ci.morph-template-jenkins.tools.bbc.co.uk"/>
+	<target host="mt-imagechef.tools.bbc.co.uk"/>
+	<target host="music-clip-dashboard.tools.bbc.co.uk"/>
+	<target host="music-tupac-production.tools.bbc.co.uk"/>
+	<target host="optimo.tools.bbc.co.uk"/>
+	<target host="pagemon.tools.bbc.co.uk"/>
+	<target host="jenkins.partner-platform.tools.bbc.co.uk"/>
+	<target host="passwordreset.tools.bbc.co.uk"/>
+	<target host="pcs-fbd-jenkins-master.tools.bbc.co.uk"/>
+	<target host="admin.partner.platform.tools.bbc.co.uk"/>
+	<target host="deployment-validation.ap.partner.platform.tools.bbc.co.uk"/>
+	<target host="prism.tools.bbc.co.uk"/>
+	<target host="ptk-acquisition.tools.bbc.co.uk"/>
+	<target host="ptk-compliance.tools.bbc.co.uk"/>
+	<target host="ptk-continuity.tools.bbc.co.uk"/>
+	<target host="radar.tools.bbc.co.uk"/>
+	<target host="ptk-destinations.tools.bbc.co.uk"/>
+	<target host="ptk-ideas.tools.bbc.co.uk"/>
+	<target host="ptk-planning.tools.bbc.co.uk"/>
+	<target host="ptk-talent.tools.bbc.co.uk"/>
+	<target host="redbutton.tools.bbc.co.uk"/>
+	<target host="resetpassword.tools.bbc.co.uk"/>
+	<target host="sawmill.tools.bbc.co.uk"/>
+	<target host="partner.sawmill.tools.bbc.co.uk"/>
+	<target host="scheduler.tools.bbc.co.uk"/>
+	<target host="silver.tools.bbc.co.uk"/>
+	<target host="ci.sport.tools.bbc.co.uk"/>
+	<target host="ci.sport-web.tools.bbc.co.uk"/>
+	<target host="buzz-cms.stage.tools.bbc.co.uk"/>
+	<target host="buzz-moderation.stage.tools.bbc.co.uk"/>
+	<target host="dmkarcade.stage.tools.bbc.co.uk"/>
+	<target host="bbclogin.id.stage.tools.bbc.co.uk"/>
+	<target host="passwordreset.stage.tools.bbc.co.uk"/>
+	<target host="resetpassword.stage.tools.bbc.co.uk"/>
+	<target host="wolftech.stage.tools.bbc.co.uk"/>
+	<target host="gateway.id.stage.tools.bbc.co.uk"/>
+	<target host="e.gateway.id.stage.tools.bbc.co.uk"/>
+	<target host="zenoss.stage.tools.bbc.co.uk"/>
+	<target host="weathermaps.zenoss.stage.tools.bbc.co.uk"/>
+	<target host="zenoss-a.stage.tools.bbc.co.uk"/>
+	<target host="taster-analytics-dashboard.tools.bbc.co.uk"/>
+	<target host="zenoss-b.stage.tools.bbc.co.uk"/>
+	<target host="telescope.tools.bbc.co.uk"/>
+	<target host="telescope-beta.tools.bbc.co.uk"/>
+	<target host="av-activity.test.tools.bbc.co.uk"/>
+	<target host="darwin.test.tools.bbc.co.uk"/>
+	<target host="bbcm-user-portal-admin.test.tools.bbc.co.uk"/>
+	<target host="castaway.test.tools.bbc.co.uk"/>
+	<target host="digitalarchive.test.tools.bbc.co.uk"/>
+	<target host="bbclogin.id.test.tools.bbc.co.uk"/>
+	<target host="eavis-admin.test.tools.bbc.co.uk"/>
+	<target host="fbd-status.test.tools.bbc.co.uk"/>
+	<target host="help.bbclogin.id.test.tools.bbc.co.uk"/>
+	<target host="i.bbclogin.id.test.tools.bbc.co.uk"/>
+	<target host="access.id.test.tools.bbc.co.uk"/>
+	<target host="gateway.id.test.tools.bbc.co.uk"/>
+	<target host="e.gateway.id.test.tools.bbc.co.uk"/>
+	<target host="i.gateway.id.test.tools.bbc.co.uk"/>
+	<target host="image-upload-activity.test.tools.bbc.co.uk"/>
+	<target host="introducing.test.tools.bbc.co.uk"/>
+	<target host="login.test.tools.bbc.co.uk"/>
+	<target host="marooned.test.tools.bbc.co.uk"/>
+	<target host="marvin2-console.test.tools.bbc.co.uk"/>
+	<target host="mira.test.tools.bbc.co.uk"/>
+	<target host="miraftp.test.tools.bbc.co.uk"/>
+	<target host="mobileci.test.tools.bbc.co.uk"/>
+	<target host="mt-imagechef.test.tools.bbc.co.uk"/>
+	<target host="music-clip-dashboard.test.tools.bbc.co.uk"/>
+	<target host="music-tupac-production.test.tools.bbc.co.uk"/>
+	<target host="passwordreset.test.tools.bbc.co.uk"/>
+	<target host="optimo.test.tools.bbc.co.uk"/>
+	<target host="jenkins.partner-platform.test.tools.bbc.co.uk"/>
+	<target host="admin.partner.platform.test.tools.bbc.co.uk"/>
+	<target host="deployment-validation.ap.partner.platform.test.tools.bbc.co.uk"/>
+	<target host="prism.test.tools.bbc.co.uk"/>
+	<target host="ptk-acquisition.test.tools.bbc.co.uk"/>
+	<target host="ptk-compliance.test.tools.bbc.co.uk"/>
+	<target host="ptk-continuity.test.tools.bbc.co.uk"/>
+	<target host="ptk-destinations.test.tools.bbc.co.uk"/>
+	<target host="ptk-ideas.test.tools.bbc.co.uk"/>
+	<target host="ptk-planning.test.tools.bbc.co.uk"/>
+	<target host="ptk-talent.test.tools.bbc.co.uk"/>
+	<target host="storygraph.rd.test.tools.bbc.co.uk"/>
+	<target host="storyshooter.rd.test.tools.bbc.co.uk"/>
+	<target host="upload.rd.test.tools.bbc.co.uk"/>
+	<target host="resetpassword.test.tools.bbc.co.uk"/>
+	<target host="users.rd.test.tools.bbc.co.uk"/>
+	<target host="redbutton.test.tools.bbc.co.uk"/>
+	<target host="taster-analytics-dashboard.test.tools.bbc.co.uk"/>
+	<target host="scheduler.test.tools.bbc.co.uk"/>
+	<target host="wolftech.test.tools.bbc.co.uk"/>
+	<target host="toybox.test.tools.bbc.co.uk"/>
+	<target host="silver.test.tools.bbc.co.uk"/>
+	<target host="tipo.test.tools.bbc.co.uk"/>
+	<target host="timelines.tools.bbc.co.uk"/>
+	<target host="toybox.tools.bbc.co.uk"/>
+	<target host="tipo.tools.bbc.co.uk"/>
+	<target host="vivo.tools.bbc.co.uk"/>
+	<target host="idt.vj.tools.bbc.co.uk"/>
+	<target host="moderation.weatherwatchers.tools.bbc.co.uk"/>
+	<target host="wolftech.tools.bbc.co.uk"/>
+	<target host="zero.vj.tools.bbc.co.uk"/>
+	<target host="admin.weatherwatchers.tools.bbc.co.uk"/>
+	<target host="zenoss.tools.bbc.co.uk"/>
+	<target host="weathermaps.zenoss.tools.bbc.co.uk"/>
+	<target host="zenoss-a.tools.bbc.co.uk"/>
+	<target host="zenoss-b.tools.bbc.co.uk"/>
+	<target host="wscareerssearch.bbc.co.uk"/>
+	<target host="wsapps.bbc.co.uk"/>
+	<target host="www.worldservicepartners.bbc.co.uk"/>
+	<target host="webconf.bbc.co.uk"/>
+	<target host="wscdn.bbc.co.uk"/>
+	<target host="wsdownload.bbc.co.uk"/>
+	<target host="wsodprogrf.bbc.co.uk"/>
+	<target host="wsondemandflash.bbc.co.uk"/>
+	<target host="wsrss.bbc.co.uk"/>
+	<target host="xmpp.bbc.co.uk"/>
 
 			<!--	+ve:
 					-->
@@ -133,39 +559,47 @@
 			<test url="http://www.bbc.co.uk/privacy/" />
 			<test url="http://www.bbc.co.uk/weather" />
 
-			<!--	-ve:
-					-->
+			<!--	-ve:-->
 			<test url="http://www.bbc.co.uk/?" />
-			<!--
 			<test url="http://www.bbc.co.uk/favicon.ico" />
-			-->
 
-		<!--	Avoid potential XHR or flash policy problems:
-									-->
-		<!--exclusion pattern="^http://(?!(?!(?:careers|careershub|iplayerhelp\.external|id|sa|ssl|www)\.bbc\.co\.uk/).+\.(?:bmp|css|gifv?|ico|jpe?g|pdf|png|svg|tiff?|ttf|woff)(?:$|\?))" /-->
-
-			<!--	+ve:
-					-->
-			<!--
+			<!--	+ve: -->
 			<test url="http://open.live.bbc.co.uk/crossdomain.xml" />
 			<test url="http://open.live.bbc.co.uk/weather/feeds/en/2650225/3dayforecast.rss" />
 			<test url="http://polling.bbc.co.uk/appconfig/iplayerradio/tablet/android/2.0.0/info.html" />
-			<test url="http://www.live.bbc.co.uk/crossdomain.xml" />	secure="false"
-			-->
+			<test url="http://www.live.bbc.co.uk/crossdomain.xml" />
 
+					<test url="http://downloads.bbc.co.uk/errors/btm.gif" />
+		<test url="http://newsimg.bbc.co.uk/shared/img/v4/skip_to_top_arrow.gif" />
+		<test url="http://static.bbc.co.uk/id/0.34.96/img/bbcid_orb_signin_light.png" />
 
-	<!--	Not secured by server:
+			<!--	+ve:
 					-->
-	<!--securecookie host="^\.bbc\.co\.uk$" name="^(?:BBC-UID|BGUID|IDENTITY_SESSION|locserv|s1)$" /-->
-	<!--securecookie host="^careershub\.bbc\.co\.uk$" name="^X-Mapping-" /-->
-	<!--securecookie host="^iplayerhelp\.external\.bbc\.co\.uk$" name="^identitytoken$" /-->
+			<test url="http://www.bbc.co.uk/arts" />
+			<test url="http://www.bbc.co.uk/blogs/internet/entries/f6f50d1f-a879-4999-bc6d-6634a71e2e60" />
+			<test url="http://www.bbc.co.uk/blogs/tv/" />
+			<test url="http://www.bbc.co.uk/contact" />
 
-	<!--	BGUID: Tracking cookie set by stats
-		a1: Tracking cookie set by sa
-						-->
-	<securecookie host="^\." name="^(?:BGUID|s1)$" />
-	<securecookie host="^[^.w]" name=".+" />
+			<!--	-ve:
+					-->
+			<test url="http://www.bbc.co.uk/favicon.ico" />
 
+			<!--	+ve:
+					-->
+			<test url="http://downloads.bbc.co.uk/default.aspx" />
+			<test url="http://open.live.bbc.co.uk/crossdomain.xml" />
+			<test url="http://open.live.bbc.co.uk/default.aspx" />
+			<test url="http://open.live.bbc.co.uk/weather/feeds/en/2650225/3dayforecast.rss" />
+			<test url="http://polling.bbc.co.uk/appconfig/iplayerradio/tablet/android/2.0.0/info.html" />
+			<test url="http://polling.bbc.co.uk/default.aspx" />
+			<test url="http://polling.bbc.co.uk/index.html" />
+			<test url="http://static.bbc.co.uk/default.aspx" />
+			<test url="http://static.bbci.co.uk/frameworks/jquery/0.3.0/sharedmodules/jquery-1.9.1" />
+			<test url="http://static.bbci.co.uk/frameworks/relay/0.2.6/sharedmodules/relay-1" />
+			<test url="http://www.live.bbc.co.uk/crossdomain.xml" />
+			<test url="http://www.live.bbc.co.uk/default.aspx" />
+			<test url="http://www.live.bbc.co.uk/index.html" />
+			<test url="http://www.live.bbc.co.uk/index.php" />
 
 	<rule from="^http:"
 		to="https:" />
