@@ -1,0 +1,15 @@
+<ruleset name="Binärgewitter">
+
+	<target host="binaergewitter.de"/>
+	<target host="www.binaergewitter.de"/>
+
+	<target host="blog.binaergewitter.de"/>
+	<target host="comments.binaergewitter.de"/>
+	<target host="dl2.binaergewitter.de"/>
+	<target host="download.binaergewitter.de"/>
+	<target host="feed.binaergewitter.de"/>
+	<target host="lists.binaergewitter.de"/>
+
+	<rule from="^http:"
+			to="https:" />
+</ruleset>
