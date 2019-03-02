@@ -15,18 +15,125 @@
 
 		<test url="http://pixel.everesttech.net/" />
 		<test url="http://pixel.everesttech.net/1/v" />
-
-
-	<!--	Not secured by server:
-					-->
-	<!--securecookie host="^\.everesttech\.net$" name="^(ev_t2|everest_g_v2|everest_session_v2|gglck)$" /-->
+		<test url="http://1.everesttech.net/" />
+		<test url="http://2fpixel.everesttech.net/" />
+		<test url="http://acaa-hk2.everesttech.net/" />
+		<test url="http://acaa-or1.everesttech.net/" />
+		<test url="http://acaa-va5.everesttech.net/" />
+		<test url="http://adf-tm.everesttech.net/" />
+		<test url="http://ads-intl.everesttech.net/" />
+		<test url="http://ads.everesttech.net/" />
+		<test url="http://as-tm.everesttech.net/" />
+		<test url="http://asf-tm.everesttech.net/" />
+		<test url="http://assets-intl.everesttech.net/" />
+		<test url="http://assets-lon5.everesttech.net/" />
+		<test url="http://assets-or1.everesttech.net/" />
+		<test url="http://assets.everesttech.net/" />
+		<test url="http://ats-intl.everesttech.net/" />
+		<test url="http://ats.everesttech.net/" />
+		<test url="http://avf-tm.everesttech.net/" />
+		<test url="http://cm-hk2.everesttech.net/" />
+		<test url="http://cm-or1.everesttech.net/" />
+		<test url="http://cm-va5.everesttech.net/" />
+		<test url="http://cm.everesttech.net/" />
+		<test url="http://cm.everesttech.net/" />
+		<test url="http://cm.everesttech.net/" />
+		<test url="http://cm.everesttech.net/" />
+		<test url="http://cm.everesttech.net/" />
+		<test url="http://cmp-as-tm.everesttech.net/" />
+		<test url="http://cmp-ase-tm.everesttech.net/" />
+		<test url="http://com.everesttech.net/" />
+		<test url="http://compixel.everesttech.net/" />
+		<test url="http://conv-tm.everesttech.net/" />
+		<test url="http://dco-manager-intl.everesttech.net/" />
+		<test url="http://dco-manager-preview-intl.everesttech.net/" />
+		<test url="http://dco-manager-preview.everesttech.net/" />
+		<test url="http://dco-manager.everesttech.net/" />
+		<test url="http://dco-reports-intl.everesttech.net/" />
+		<test url="http://dco-reports.everesttech.net/" />
+		<test url="http://display-tm.everesttech.net/" />
+		<test url="http://displayf-tm.everesttech.net/" />
+		<test url="http://efrontier.com.everesttech.net/" />
+		<test url="http://everest_g_v2.everesttech.net/" />
+		<test url="http://everesttech.net/" />
+		<test url="http://evqaaahrhnwen.everesttech.net/" />
+		<test url="http://external-lga3-1.xx.fbcdn.net" />
+		<test url="http://fsync-tm.everesttech.net/" />
+		<test url="http://gel.everesttech.net/" />
+		<test url="http://httpcm.everesttech.net/" />
+		<test url="http://ibv-tm.everesttech.net/" />
+		<test url="http://ixel.everesttech.net/" />
+		<test url="http://ixel2823.everesttech.net/" />
+		<test url="http://l.everesttech.net/" />
+		<test url="http://lasteventf-tm.everesttech.net/" />
+		<test url="http://les-hk2.everesttech.net/" />
+		<test url="http://les-or1.everesttech.net/" />
+		<test url="http://les-va5.everesttech.net/" />
+		<test url="http://les.everesttech.net/" />
+		<test url="http://masterpixellist-tp00.everesttech.net/" />
+		<test url="http://matchnet.everesttech.net/" />
+		<test url="http://netpixel.everesttech.net/" />
+		<test url="http://nfy-rubicon-hk2.everesttech.net/" />
+		<test url="http://nfy-rubicon-or1.everesttech.net/" />
+		<test url="http://nfy-rubicon-va5.everesttech.net/" />
+		<test url="http://pixrl.everesttech.net/" />
+		<test url="http://playtime-tm.everesttech.net/" />
+		<test url="http://pv-tm.everesttech.net/" />
+		<test url="http://rd17use-tm.everesttech.net/" />
+		<test url="http://rtb-lb-event-iad-1a-tm.everesttech.net/" />
+		<test url="http://rtb-lb-event-iad-1b-tm.everesttech.net/" />
+		<test url="http://rtb-lb-event-sjc-1a-tm.everesttech.net/" />
+		<test url="http://rtb-lb-event-sjc-1b-tm.everesttech.net/" />
+		<test url="http://rtb-lb-event-sjc-tm.everesttech.net/" />
+		<test url="http://rtb-lb-event-tm-ams-tm.everesttech.net/" />
+		<test url="http://rtb-lb-event-tm-hkg-tm.everesttech.net/" />
+		<test url="http://rtb-lb-event-tm-iad-tm.everesttech.net/" />
+		<test url="http://rtb-pexel.or1.everesttech.net/" />
+		<test url="http://rtb-pixel-ams1.everesttech.net/" />
+		<test url="http://rtb-pixel-hk2.efrontier.com.everesttech.net/" />
+		<test url="http://rtb-pixel-hk2.everesttech.net/" />
+		<test url="http://rtb-pixel-or1.everesttech.net/" />
+		<test url="http://rtb-pixel-or1.everesttech.net/" />
+		<test url="http://rtb-pixel-or1.everesttech.net/" />
+		<test url="http://rtb-pixel-or1.everesttech.net/" />
+		<test url="http://rtb-pixel-va5.everesttech.net/" />
+		<test url="http://rtb-pixel-va5.everesttech.net/" />
+		<test url="http://rtb-pixel-va5.everesttech.net/" />
+		<test url="http://rtb-pixel-va5.everesttech.net/" />
+		<test url="http://rtb-pixelhk2.everesttech.net/" />
+		<test url="http://rtb-tm.everesttech.net/" />
+		<test url="http://rtd-tm.everesttech.net/" />
+		<test url="http://rtdf-tm.everesttech.net/" />
+		<test url="http://rtdxf-tm.everesttech.net/" />
+		<test url="http://ssd-bluekai-hk2.everesttech.net/" />
+		<test url="http://ssd-bluekai-or1.everesttech.net/" />
+		<test url="http://ssd-bluekai-va5.everesttech.net/" />
+		<test url="http://ssd-co-hk2.everesttech.net/" />
+		<test url="http://ssd-co-or1.everesttech.net/" />
+		<test url="http://ssd-co-va5.everesttech.net/" />
+		<test url="http://ssd-demdex-hk2.everesttech.net/" />
+		<test url="http://ssd-demdex-or1.everesttech.net/" />
+		<test url="http://ssd-demdex-va5.everesttech.net/" />
+		<test url="http://stats-tm.everesttech.net/" />
+		<test url="http://statsf-tm.everesttech.net/" />
+		<test url="http://stpixel0.everesttech.net/" />
+		<test url="http://sync-tm.everesttech.net/" />
+		<test url="http://tm.everesttech.net/" />
+		<test url="http://tp00-ams1.everesttech.net/" />
+		<test url="http://tp00-hk2.everesttech.net/" />
+		<test url="http://tp00-or1.everesttech.net/" />
+		<test url="http://tp00-va5.everesttech.net/" />
+		<test url="http://va5.everesttech.net/" />
+		<test url="http://video-or1.everesttech.net/" />
+		<test url="http://video.everesttech.net/" />
+		<test url="http://videohub-or1.everesttech.net/" />
+		<test url="http://www.everesttech.net/" />
+		<test url="http://www.pixel.everesttech.net/" />
+		<test url="http://www.pixel1041.everesttech.net/" />
+		<test url="http://ync-tm.everesttech.net/" />
 
 	<securecookie host="^\.everesttech\.net$" name=".+" />
 
-
-	<!--	 Web bugs:
-				-->
-	<rule from="^http://pixel(\d*)\.everesttech\.net/"
-		to="https://pixel$1.everesttech.net/" />
+	<rule from="^http:" to="https:" />
 
 </ruleset>
